@@ -1,6 +1,6 @@
 
 import java.util.*;
-public class oen{
+public class CatchTheBot{
     public static void main() 
     {
         int mapSize = 10; 
