@@ -2,9 +2,10 @@ Hello, This is a project made in java for a simple terminal game.
 
 ->Explanation of the Code
 
-  1. Imports: We import `Random` for generating random numbers and `Scanner` for user input.
-
-  2. Initialization:
+  1. Imports:
+   -We import the `Utility` package from java library to get certain fuctions. 
+   -We use `Random` for generating random numbers and `Scanner` for user input.
+  3. Initialization:
    - We define `mapSize` as 10, representing each line's positions from 0 to 9.
    - A two-dimensional array `map` is created to represent two lines of the game area.
    - The player's starting position is set to `(0,0)` on line `0`, while the bot's starting position is randomly generated.
