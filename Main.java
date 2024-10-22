@@ -57,12 +57,14 @@ public class CatchTheBot{
                 botPosition = mapSize - 1;
             }
             // Randomly change bot's line with a small chance
-            if (random.nextBoolean()) {
+            if (random.nextBoolean()) 
+            {
                 botLine = (botLine == 0) ? 1 : 0; // Tertiary Operator goes brr
             }
             System.out.println("You moved to position (" + playerLine + ", " + playerPosition + "). The bot moved to position (" + botLine + ", " + botPosition + ").");
             // Check for catch condition
-            if (playerLine == botLine && playerPosition == botPosition) {
+            if (playerLine == botLine && playerPosition == botPosition)
+            {
                 System.out.println("Congratulations! You caught the bot!");
                 return; // End game on catch
             }
@@ -73,13 +75,20 @@ public class CatchTheBot{
 
     // Method to display the current state of the map with positions of player and bot
     public static void displayMap(char[][] map, int playerLine, int playerPos, int botLine, int botPos) {
-        for (int i = 0; i < map.length; i++) {
-            for (int j = 0; j < map[i].length; j++) {
-                if (i == playerLine && j == playerPos) {
+        for (int i = 0; i < map.length; i++) 
+        {
+            for (int j = 0; j < map[i].length; j++) 
+            {
+                if (i == playerLine && j == playerPos) 
+                {
                     System.out.print("P "); // P for Player
-                } else if (i == botLine && j == botPos) {
+                }
+                else if (i == botLine && j == botPos) 
+                {
                     System.out.print("B "); // B for Bot
-                } else {
+                }
+                else
+                {
                     System.out.print(". "); // Empty space represented by dot
                 }
             }
